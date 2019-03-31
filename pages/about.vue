@@ -8,11 +8,7 @@
 export default {
   data() {
     return {
-      items: [
-        'busking_1.jpg',
-        'busking_2.jpg',
-        'busking_3.jpg'
-      ]
+      items: ['busking_1.jpg', 'busking_2.jpg', 'busking_3.jpg']
     }
   }
 }

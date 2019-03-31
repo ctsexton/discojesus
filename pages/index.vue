@@ -3,15 +3,15 @@
     v-layout.relative(row wrap align-center xs12 grow fill-height)
       v-layout.text-xs-center(xs12 md6 fill-height align-center grow)
         v-layout(column justify-center)
-          .mb-3.bungee(:class="{ 'medium-title': $breakpoint.is('smAndDown'), 'big-title': $breakpoint.is('mdAndUp')}") DISCOJESUS
+          .mb-3.bungee(:class="{ 'small-title': $breakpoint.is('smAndDown'), 'medium-title': $breakpoint.is('mdAndUp')}") DISCOJESUS
           .display-1.mb-2.white--text.raleway NEW ALBUM
-          .display-2.my-4.white--text.raleway <i>SWIM</i>
-          .display-1.mb-2.white--text.raleway OUT NOW
-          v-img.hidden-sm-and-up(src="artwork_med.jpg" contain max-height="50vh" position="center center")
+          .display-3.my-4.white--text.raleway <i>SWIM</i>
+          .display-1.my-2.white--text.raleway OUT NOW
+          v-img.hidden-md-and-up(src="artwork_med.jpg" contain max-height="50vh" position="center center")
           v-layout.my-2(wrap justify-center :class="{ 'medium-icon': $breakpoint.is('smAndDown'), 'big-icon': $breakpoint.is('mdAndUp')}")
             a(v-for="link, index in links" :key="index" :href="link.url" target="_blank")
-              FontAwesomeIcon.ma-3.icon(:icon="link.icon")
-      v-flex.hidden-xs-only(xs12 md6 fill-height grow)
+              FontAwesomeIcon.ma-4.icon(:icon="link.icon")
+      v-flex.hidden-sm-and-down(xs12 md6 fill-height grow)
         v-layout(fill-height align-center)
           v-img(src="artwork_med.jpg" contain max-height="80vh" :position="$breakpoint.is('smAndDown') ? 'center center' : 'center right'")
 </template>
@@ -62,6 +62,9 @@ export default {
 .bungee {
   font-family: 'Bungee' !important;
 }
+.disco-red {
+  color: #ed2d20;
+}
 .raleway {
   font-family: 'Raleway', sans-serif !important;
 }
@@ -74,10 +77,10 @@ export default {
 .icon:hover {
   color: #f7e052;
 }
-.big-title {
-  font-size: 7em;
-}
 .medium-title {
+  font-size: 5em;
+}
+.small-title {
   font-size: 3em;
 }
 .big-icon {
