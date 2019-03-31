@@ -13,7 +13,12 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description }
+      { hid: 'description', name: 'description', content: pkg.description },
+      { property: 'og:image', content: 'https://discojesus.wtf/artwork_small.jpg'},
+      { property: 'og:type', content: 'article'},
+      { property: 'og:title', content: 'DISCOJESUS'},
+      { property: 'og:description', content: 'DISCOJESUS - New album SWIM out now!'},
+      { property: 'og:url', content: 'https://discojesus.wtf'}
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -61,8 +66,9 @@ module.exports = {
           },
         ]
       },
-       'vue-scrollto/nuxt'
-    ]
+    ],
+    'vue-scrollto/nuxt',
+    '@nuxtjs/axios'
   ],
 
   server: {

@@ -87,7 +87,7 @@ export default {
       const paths = {
         '/': 'background-pink',
         '/about': 'background-grey',
-        '/video': 'background-yellow',
+        '/video': 'background-grey',
         '/listen': 'background-grey',
         '/gigs': 'background-grey',
         '/contact': 'background-grey'
