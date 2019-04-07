@@ -32,7 +32,7 @@ export default {
           icon: fab.faBandcamp
         },
         {
-          url: '',
+          url: 'https://open.spotify.com/album/0ajsL2B5E6vDCy8RhRYmsw?nd=1',
           icon: fab.faSpotify
         },
         {
